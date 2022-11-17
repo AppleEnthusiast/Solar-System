@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <style>
+  * {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   overflow: hidden;
+  }
+
+  body {
+   min-height: 100vh;
+   background-color: #f4f4f4;
+   color: black;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+
+  }
+
+  #planetsOfSolarSystem {
+   height: 100vh;
+   flex-basis: 20%;
+   padding: 20px;
+   background-color: black;
+   color: aquamarine;
+  }
+
+  main {
+   display: flex;
+   flex-direction: column;
+   flex-basis: 80%;
+  }
+
+  ul {
+   margin: 10px 0;
+   list-style-type: none;
+  }
+
+  ul li {
+   margin: 20px 0;
+   font-size: 1.5rem;
+  }
+
+  
+  h1 {
+   font-size: 1.5rem;
+   letter-spacing: 0.2rem;
+   background-color: antiquewhite;
+   padding: 10px;
+   border: 4px solid darkred;
+   box-shadow: 3px 5px 5px black;
+   margin: 35px 10px;
+  }
+
+  #planet {
+   display: flex;
+   justify-content: space-between;
+   margin-top: 20px;
+   padding: 20px;
+  }
+
+  #description {
+   flex-basis: 50%;
+  }
+  #description h2 {
+   text-transform: uppercase;
+   letter-spacing: 0.2rem;
+  }
+  #description p {
+   margin: 1rem 0;
+   text-align: justify;
+  }
+  img {
+   height: 320px;
+   width: 320px;
+   object-fit: cover;
+   border-radius: 10px;
+  }
+ </style>
+ <title>The Solar System</title>
+</head>
+
+<body>
+
+ <div id="planetsOfSolarSystem">
+  <ul>
+   <li>Mercury</li>
+   <li>Venus</li>
+   <li>Earth</li>
+   <li>Mars</li>
+   <li>Jupiter</li>
+   <li>Saturn</li>
+   <li>Uranus</li>
+   <li>Neptune</li>
+   <li>Pluto</li>
+  </ul>
+ </div>
+
+
+
+
+ <main>
+  <h1>Planets of the Solar System</h1>
+  <div id="planet">
+   <div id="description">
+    <h2>Mercury</h2>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis quasi illo, hic impedit facere dolorum natus consequuntur expedita optio cupiditate quae reiciendis et laborum magni velit dolor ducimus commodi minus aspernatur fuga nobis molestias quo, quia doloremque! Voluptatibus, omnis ex! Distinctio sint molestiae natus minima repellendus blanditiis, voluptatum quo hic cum obcaecati quae dolores laborum quas nulla delectus nemo iste nihil ratione cupiditate exercitationem impedit. Eaque nobis odio explicabo sint omnis sed consequuntur totam molestias nostrum aut ea, fugit suscipit velit aspernatur voluptate quas voluptatum ex eum expedita deserunt necessitatibus!</p>
+   </div>
+   <img src="./img/mercury.jpg" alt="Planet">
+  </div>
+ </main>
+
+
+
+ <script src="planets.js"></script>
+</body>
+
+</html>
