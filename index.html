@@ -14,13 +14,12 @@
   }
 
   body {
-   min-height: 100vh;
+   height: 100vh;
    background-color: #f4f4f4;
    color: black;
    display: flex;
    flex-direction: row;
    justify-content: space-between;
-
   }
 
   #planetsOfSolarSystem {
@@ -31,14 +30,8 @@
    color: aquamarine;
   }
 
-  main {
-   display: flex;
-   flex-direction: column;
-   flex-basis: 80%;
-  }
-
   ul {
-   margin: 10px 0;
+   margin: 60px 0;
    list-style-type: none;
   }
 
@@ -47,15 +40,21 @@
    font-size: 1.5rem;
   }
 
-  
+  main {
+   flex-basis: 80%;
+   display: flex;
+   flex-direction: column;
+  }
+
   h1 {
-   font-size: 1.5rem;
+   font-size: 2rem;
    letter-spacing: 0.2rem;
+   text-align: center;
    background-color: antiquewhite;
+   margin: 35px 10px;
    padding: 10px;
    border: 4px solid darkred;
    box-shadow: 3px 5px 5px black;
-   margin: 35px 10px;
   }
 
   #planet {
@@ -81,6 +80,35 @@
    width: 320px;
    object-fit: cover;
    border-radius: 10px;
+  }
+  @media only screen and (max-width: 600px){
+   body, main, #planet {
+    display: block;
+   }
+   body {
+    overflow: auto;
+   }
+   #planetsOfSolarSystem {
+    height: auto;
+    padding: 0;
+   }
+   #planetsOfSolarSystem > ul {
+    width: 100vw;
+    height: auto;
+    margin: 0px;
+    padding: 10px;
+    display: inline;
+    text-align: center;
+   }
+    #planetsOfSolarSystem > ul > li {
+     margin-top: 10px;
+     margin-bottom: 20px;
+    }
+    img {
+     margin-top: 15px;
+     width: 250px;
+     height: 250px;
+    }
   }
  </style>
  <title>The Solar System</title>
@@ -111,7 +139,7 @@
    <div id="description">
     <h2>Mercury</h2>
     <p id="planetDescriptipm"></p>
-    <a href="http://index.html" target="_blank">Read more</a>
+    <a href="https://en.wikipedia.org/wiki/Mercury_(planet)" target="_blank">Read more</a>
    </div>
    <img src="./img/mercury.jpg" alt="Planet"><br>
    
